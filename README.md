@@ -1,21 +1,6 @@
 ---
 title: "STAN – STock ANalyser"
 author: "Cyrus Ingrid Berenice Kouassi"
-date: "`r Sys.Date()`"
-output:
-  html_document:
-    toc: true
-    toc_depth: 3
-    toc_float:
-      collapsed: true
-    number_sections: true
-    theme: flatly
-    highlight: tango
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
 
 ---
 
