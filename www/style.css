@@ -1,0 +1,409 @@
+/* =============================================================================
+STAN - style.css
+
+============================================================================= */
+
+/* ============================================================================
+1. BASE GENERALE
+============================================================================ */
+body,
+.content-wrapper,
+.right-side {
+background: #0b1220 !important;
+color: #e5e7eb !important;
+font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ============================================================================
+2. PAGE D'ACCUEIL
+============================================================================ */
+.landing-page {
+min-height: 100vh;
+background: linear-gradient(135deg, #08111f 0%, #0f172a 50%, #111827 100%);
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 30px;
+}
+
+.landing-overlay {
+width: 100%;
+max-width: 1100px;
+}
+
+.landing-box {
+background: rgba(17, 24, 39, 0.94);
+border: 1px solid rgba(59, 130, 246, 0.22);
+border-radius: 24px;
+padding: 46px;
+box-shadow: 0 14px 38px rgba(0, 0, 0, 0.35);
+text-align: center;
+}
+
+.landing-main-icon {
+font-size: 44px !important;
+color: #60a5fa !important;
+}
+
+.landing-title {
+font-size: 58px;
+font-weight: 800;
+letter-spacing: 2px;
+color: #f8fafc;
+margin-bottom: 8px;
+}
+
+.landing-subtitle {
+color: #93c5fd;
+margin-top: 0;
+margin-bottom: 20px;
+font-weight: 600;
+}
+
+.landing-text {
+color: #cbd5e1;
+font-size: 18px;
+max-width: 850px;
+margin: 0 auto 30px auto;
+line-height: 1.7;
+}
+
+.landing-features {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+gap: 16px;
+margin: 25px 0 30px 0;
+}
+
+.feature-card {
+background: #111827;
+border: 1px solid #1f2937;
+border-radius: 16px;
+padding: 18px;
+color: #dbeafe;
+box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+}
+
+.start-btn {
+background: linear-gradient(135deg, #2563eb, #1d4ed8) !important;
+border: none !important;
+border-radius: 12px !important;
+padding: 14px 28px !important;
+color: white !important;
+font-size: 18px !important;
+font-weight: 700 !important;
+}
+
+.start-btn:hover {
+background: linear-gradient(135deg, #3b82f6, #2563eb) !important;
+}
+
+/* ============================================================================
+3. HEADER + SIDEBAR
+============================================================================ */
+.skin-black .main-header .logo,
+.skin-black .main-header .navbar,
+.skin-black .main-sidebar {
+background-color: #0f172a !important;
+}
+
+.skin-black .main-sidebar {
+border-right: 1px solid #1f2937;
+}
+
+.skin-black .main-header .navbar {
+border-bottom: 1px solid #1f2937;
+}
+
+.skin-black .sidebar-menu > li > a {
+color: #cbd5e1 !important;
+font-weight: 500;
+}
+
+.skin-black .sidebar-menu > li.active > a,
+.skin-black .sidebar-menu > li:hover > a {
+background: #111827 !important;
+color: #ffffff !important;
+border-left: 4px solid #3b82f6 !important;
+}
+
+.content {
+padding: 18px;
+}
+
+/* ============================================================================
+4. BOXES GENERALES
+============================================================================ */
+.box {
+background: #111827 !important;
+border-radius: 16px !important;
+border-top: 3px solid #2563eb !important;
+border: 1px solid #1f2937 !important;
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+color: #e5e7eb !important;
+}
+
+.box-header.with-border {
+border-bottom: 1px solid #1f2937 !important;
+}
+
+.box-title {
+color: #f8fafc !important;
+font-weight: 700 !important;
+letter-spacing: 0.2px;
+}
+
+/* Variations discrètes des couleurs de titres selon le statut */
+.box.box-solid.box-primary > .box-header {
+background: linear-gradient(90deg, #1d4ed8, #2563eb) !important;
+color: white !important;
+}
+
+.box.box-solid.box-info > .box-header {
+background: linear-gradient(90deg, #0369a1, #0284c7) !important;
+color: white !important;
+}
+
+.box.box-solid.box-warning > .box-header {
+background: linear-gradient(90deg, #b45309, #d97706) !important;
+color: white !important;
+}
+
+.box.box-solid.box-success > .box-header {
+background: linear-gradient(90deg, #15803d, #16a34a) !important;
+color: white !important;
+}
+
+/* ============================================================================
+5. VALUE BOXES
+----------------------------------------------------------------------------
+Objectif :
+- chiffres visibles
+- pas de coupure avec ...
+- icônes transparentes au fond
+============================================================================ */
+.small-box {
+border-radius: 16px !important;
+box-shadow: 0 10px 18px rgba(0, 0, 0, 0.20);
+min-height: 125px !important;
+overflow: hidden !important;
+position: relative !important;
+}
+
+.small-box .inner {
+overflow: visible !important;
+padding-right: 10px !important;
+text-align: center !important;
+position: relative !important;
+z-index: 2 !important;
+}
+
+.small-box h3,
+.small-box p {
+color: white !important;
+margin: 0 !important;
+position: relative !important;
+z-index: 2 !important;
+}
+
+.small-box h3 {
+white-space: nowrap !important;
+overflow: visible !important;
+text-overflow: clip !important;
+font-size: 28px !important;
+line-height: 1.1 !important;
+max-width: none !important;
+text-align: center !important;
+}
+
+.small-box p {
+margin-top: 8px !important;
+font-size: 14px !important;
+line-height: 1.2 !important;
+text-align: center !important;
+}
+
+/* Icônes décoratives : transparentes et au fond */
+.small-box .icon-large,
+.small-box .icon {
+position: absolute !important;
+right: 10px !important;
+bottom: 8px !important;
+top: auto !important;
+font-size: 60px !important;
+color: rgba(255, 255, 255, 0.06) !important;
+opacity: 1 !important;
+pointer-events: none !important;
+z-index: 0 !important;
+}
+
+@media (max-width: 1200px) {
+.small-box h3 {
+font-size: 24px !important;
+}
+}
+
+@media (max-width: 768px) {
+.small-box h3 {
+font-size: 20px !important;
+}
+}
+
+/* ============================================================================
+6. CARTES PERSONNALISEES PEDAGOGIQUES
+============================================================================ */
+.stan-card-blue,
+.stan-card-gold,
+.stan-card-purple,
+.stan-card-red,
+.stan-card-green {
+border-radius: 14px;
+padding: 18px;
+min-height: 120px;
+color: #f8fafc;
+font-size: 15px;
+line-height: 1.6;
+margin-bottom: 14px;
+border-left: 5px solid transparent;
+}
+
+.stan-card-blue {
+background: #0f2747;
+border-left-color: #3b82f6;
+}
+
+.stan-card-gold {
+background: #3f2d12;
+border-left-color: #f59e0b;
+}
+
+.stan-card-purple {
+background: #32204d;
+border-left-color: #a855f7;
+}
+
+.stan-card-red {
+background: #4b1f1f;
+border-left-color: #ef4444;
+}
+
+.stan-card-green {
+background: #123524;
+border-left-color: #22c55e;
+}
+
+.stan-alert {
+background: #4b1f1f;
+border-left: 4px solid #ef4444;
+padding: 14px;
+border-radius: 12px;
+color: #fee2e2;
+}
+
+/* ============================================================================
+7. TABLEAUX / DATATABLES
+============================================================================ */
+table.dataTable {
+color: #e5e7eb !important;
+background-color: #111827 !important;
+}
+
+.dataTables_wrapper .dataTables_filter input,
+.dataTables_wrapper .dataTables_length select {
+background: #0f172a !important;
+color: #e5e7eb !important;
+border: 1px solid #334155 !important;
+border-radius: 8px !important;
+}
+
+table.dataTable tbody tr {
+background-color: #111827 !important;
+}
+
+table.dataTable.stripe tbody tr.odd,
+table.dataTable.display tbody tr.odd {
+background-color: #0f172a !important;
+}
+
+table.dataTable thead th {
+background-color: #1e293b !important;
+color: #f8fafc !important;
+border-bottom: 1px solid #334155 !important;
+}
+
+/* ============================================================================
+8. INPUTS / SELECT / DATE
+============================================================================ */
+.form-control {
+background-color: #0f172a !important;
+color: #e5e7eb !important;
+border: 1px solid #334155 !important;
+border-radius: 10px !important;
+}
+
+.selectize-input,
+.selectize-dropdown,
+.selectize-input.full {
+background: #0f172a !important;
+color: #e5e7eb !important;
+border-color: #334155 !important;
+}
+
+.selectize-dropdown .active {
+background: #1d4ed8 !important;
+color: white !important;
+}
+
+.action-btn {
+background: #1d4ed8 !important;
+color: white !important;
+border: none !important;
+border-radius: 10px !important;
+font-weight: 600 !important;
+}
+
+.action-btn:hover {
+background: #2563eb !important;
+}
+
+/* ============================================================================
+9. PLOTLY
+============================================================================ */
+.js-plotly-plot,
+.plotly,
+.plot-container {
+border-radius: 12px !important;
+}
+
+/* ============================================================================
+10. LIENS, PETITS TEXTES, DETAILS
+============================================================================ */
+small,
+.help-block {
+color: #cbd5e1 !important;
+}
+
+hr {
+border-top: 1px solid #334155 !important;
+}
+
+/* ============================================================================
+11. RESPONSIVE
+============================================================================ */
+@media (max-width: 768px) {
+.landing-title {
+font-size: 40px;
+}
+
+.landing-box {
+padding: 28px 20px;
+}
+
+.landing-text {
+font-size: 16px;
+}
+
+.landing-main-icon {
+font-size: 34px !important;
+}
+}
