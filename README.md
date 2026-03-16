@@ -331,7 +331,7 @@ L'application est entièrement autonome. Un utilisateur peut, sans intervention 
 
 ---
 
-# Conclusion {.unnumbered .unlisted}
+# Conclusion 
 
 **STAN – STock ANalyser** est un outil pédagogique et interactif pour l'exploration de séries financières sous R/Shiny. Il couvre l'ensemble du workflow : acquisition des données, calcul d'indicateurs, modélisation statistique, visualisation et contrôle qualité.
 
